@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic tac toe</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="board">
+    <div class="info">
+      <div class="score" id="player" style="border-right:3px ridge lightgrey;"><span>Player 0</span></div>
+      <div class="score" id="computer"><span>Computer <span id="score">0</span></span>
+      </div>
+      <div class="reset">Reset</div>
+    </div>
+    <div class="inside">
+      <div class="result">draw</div>
+      <div class="first">
+        <div class="question">
+          play as?
+        </div>
+        <div class="choice"><span id="X">X</span><span id="O">O</span>
+        </div>
+      </div>
+      <div class="game">
+        <div class="square br bb"><span id="0"></span></div><div class="square br bb"><span id="1"></span></div><div class="square bb"><span id="2"></span></div>
+        <div class="square br bb"><span id="3"></span></div><div class="square br bb"><span id="4"></span></div><div class="square bb"><span id="5"></span></div>
+        <div class="square br"><span id="6"></span></div><div class="square br"><span id="7"></span></div><div class="square"><span id="8"></span></div>
+      </div>
+    </div>
+</body>
+
+</html>

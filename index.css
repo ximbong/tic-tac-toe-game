@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Rock+Salt|Architects+Daughter|VT323");
+
+body {
+  margin-top: 50px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.board {
+  margin: 0 auto;
+  width: 320px;
+  height: 350px;
+  min-width: 320px;
+  background: #ffd24d;
+  padding: 0 30px 40px 30px;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 8px 18px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 8px 18px 6px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 8px 18px 6px rgba(0, 0, 0, 0.75);
+}
+
+.info {
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+}
+
+.score {
+  width: 35%;
+  display: inline-block;
+  text-align: center;
+}
+
+.reset {
+  position: relative;
+  top: -2px;
+  float: right;
+  margin-right: 5px;
+  cursor: pointer;
+  padding: 2px 12px;
+  vertical-align: 25px;
+}
+
+.reset:hover {
+  border: 1px dashed black;
+  border-radius: 10px;
+}
+
+.inside {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background: #11660b;
+  /* Old browsers */
+  background: -moz-radial-gradient( center, ellipse cover, #11660b 0%, #008709 0%, #002b0c 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient( center, ellipse cover, #11660b 0%, #008709 0%, #002b0c 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient( ellipse at center, #11660b 0%, #008709 0%, #002b0c 100%);
+  padding: 10px;
+}
+
+.question {
+  text-transform: capitalize;
+  position: relative;
+  top: 35px;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Architects Daughter", cursive;
+  letter-spacing: 5px;
+}
+
+.choice {
+  position: relative;
+  top: 10px;
+  font-size: 120px;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+}
+
+#X, #O {
+  margin: 14px;
+  transition: transform 0.1s ease-out;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#X:hover, #O:hover {
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+
+.result {
+  color: #e5e8e8;
+  font-family: 'VT323', monospace;
+  position: relative;
+  top: 75px;
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: none;
+}
+
+.first {
+  color: #e5e8e8;
+}
+
+.game {
+  display: none;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.square span {
+  font-size: 85px;
+  font-family: "Architects Daughter", cursive;
+  line-height: 100px;
+  color: rgba(220, 220, 220, 0.7);
+}
+
+.bb {
+  border-bottom: 2px solid #c2c2d6;
+}
+
+.br {
+  border-right: 2px solid #c2c2d6;
+}
